@@ -121,7 +121,7 @@ declare type CreateUserParams = {
     action: "Add" | "Update";
     userId: string;
     type: TransformationTypeKey;
-    creditBalance: number;
+    creditBalance: number ;
     data?: any |null;
     config?: Transformations | null;
   };
