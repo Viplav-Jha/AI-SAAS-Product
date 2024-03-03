@@ -11,9 +11,12 @@ const AddTransformationTypePage = async ({
 }: SearchParamProps) => {
   const transformation = transformationTypes[type];
   const { userId } = auth();
+  console.log("-------------userId--------",userId)
+
   if (!userId) return redirect('/sign-in')
 
-  // const user = await getUserById(userId);
+   const user = await getUserById(userId);
+   console.log("---------user fro mongoD----------",user)
   return (
     <>
       <Header title={transformation.title} subTitle={transformation.subTitle} />
