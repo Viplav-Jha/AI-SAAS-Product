@@ -1,10 +1,7 @@
-"use client"
-import React from 'react';
-
+"use client";
+import React from "react";
 
 const Home = () => {
-
-
   return (
     <div className="flex items-center justify-center h-screen">
       {/* <div className="bg-gray-100 p-8 rounded-md shadow-md" >
