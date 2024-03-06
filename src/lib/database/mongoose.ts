@@ -1,9 +1,8 @@
 import mongoose, { Mongoose } from "mongoose";
 
 const MONGODB_URL =
-  process.env.MONGODB_URL ||
-  "mongodb+srv://viplavjha1993:PfYv1ksLaz4MNcKO@cluster0.kaxh4qe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+  process.env.MONGODB_URL
+  
 interface MongooseConnection {
   conn: Mongoose | null;
   promise: Promise<Mongoose> | null;
