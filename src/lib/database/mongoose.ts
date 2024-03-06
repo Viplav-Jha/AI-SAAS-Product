@@ -38,6 +38,5 @@ export const connectToDatabase = async () => {
     console.error("MongoDB Atlas connection error:", error);
     throw error;
   }
-
-  return cached.conn;
+return cached.conn;
 };
