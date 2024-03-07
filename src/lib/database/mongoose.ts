@@ -1,8 +1,7 @@
 import mongoose, { Mongoose } from "mongoose";
 
-const MONGODB_URL =
-  process.env.MONGODB_URL
-  
+const MONGODB_URL = process.env.MONGODB_URL;
+
 interface MongooseConnection {
   conn: Mongoose | null;
   promise: Promise<Mongoose> | null;
@@ -37,5 +36,5 @@ export const connectToDatabase = async () => {
     console.error("MongoDB Atlas connection error:", error);
     throw error;
   }
-return cached.conn;
+  return cached.conn;
 };
