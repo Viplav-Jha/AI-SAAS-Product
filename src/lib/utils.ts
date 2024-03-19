@@ -15,7 +15,6 @@ export const handleError = (error: unknown) => {
     console.error(error);
     throw error;  // Re-throw the original error
   } else if (typeof error === "string") {
-    // This is a string error message
     console.error(error);
     throw new Error(`Error: ${error}`);
   } else {
