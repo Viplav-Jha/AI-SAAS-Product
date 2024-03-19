@@ -13,7 +13,7 @@ export const handleError = (error: unknown) => {
   if (error instanceof Error) {
     // This is a native JavaScript error (e.g., TypeError, RangeError)
     console.error(error);
-    throw error;  // Re-throw the original error
+    throw error;  
   } else if (typeof error === "string") {
     console.error(error);
     throw new Error(`Error: ${error}`);
